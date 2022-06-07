@@ -6,6 +6,13 @@ const app = Vue.createApp({
     };
   },
   methods: {
+    outputFullName() {
+      console.log('Running agian...')
+      if(this.name === "") {
+        return '';
+      } 
+      return this.name + ' ' + "Pavaputanon";
+    },
     setName(event, lastName) {
       this.name = event.target.value;
     },
